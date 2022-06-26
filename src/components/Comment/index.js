@@ -9,8 +9,12 @@ const Comment = ({ comment, author }) => (
 
 
 Comment.propTypes = {
-    comment: PropTypes.string.isRequired,
-    author: PropTypes.string.isRequired
+    comment: PropTypes.shape({
+        text: PropTypes.string,
+    }).isRequired,
+    author: PropTypes.shape({
+        name: PropTypes.string,
+    }).isRequired,
 };
 
 export default Comment;

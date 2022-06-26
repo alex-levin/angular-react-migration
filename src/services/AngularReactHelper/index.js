@@ -4,7 +4,7 @@ import React from 'react';
 import { mapValues } from 'lodash';
 
 function render(element, Component, props) {
-    ReactDOM.render(
+    root.render(
         <Component { ...props } />,
         element,
     );
@@ -25,6 +25,7 @@ export function getAngularService(document, name) {
     return injector.get(name);
 }
 
+// not in use - replaced with react2angular
 export function reactToAngularComponent(Component) {
     const { propTypes = {} } = Component;
     return {
