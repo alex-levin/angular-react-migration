@@ -1,0 +1,20 @@
+Warning: ReactDOM.render is no longer supported in React 18.
+That's what react2angular is doing.
+
+
+https://www.angularfix.com/2022/01/import-angularjs-modules-with-webpack.html
+https://www.angularfix.com/2022/04/what-does-error-injectorunpr-unknown.html
+https://docs.angularjs.org/guide/services#creating-services
+https://turreta.com/2017/03/08/angularjs-use-service-from-another-module/
+https://docs.angularjs.org/error/$injector/unpr
+https://stackoverflow.com/questions/43767391/exporting-angularjs-module-as-es6-module
+https://stackoverflow.com/questions/43643919/uncaught-typeerror-angular-module-is-not-a-function-at
+https://stackoverflow.com/questions/58866183/using-react2angular-react-isnt-recognized-no-erros
+https://parceljs.org/
+https://github.com/parcel-bundler/parcel
+https://www.youtube.com/watch?v=WDpxqopXd9U
+https://github.com/codebubb/react-webpack/blob/main/package.json
+https://stackoverflow.com/questions/42672701/unknown-provider-stateprovider
+
+angular + webpack + parcel:
+https://codesandbox.io/s/angularjs-es6-lubcz?file=/package.json

@@ -1,4 +1,9 @@
 import angular from 'angular';
+require('angular-ui-router');
+
+import CommentListModule from './components/CommentList';
+import AuthorService from './services/AuthorService';
+import CommentService from './services/CommentService/index.js';
 
 const setupRoutes = ($stateProvider) => {
     $stateProvider
@@ -23,12 +28,9 @@ const enableHtml5Mode = ($locationProvider) => {
     $locationProvider.html5Mode({ enabled: true });
 };
 
-module.exports = angular.module('ngReactExample', [
-    require('angular-ui-router'),
-    require('./services/CommentService').name,
-    require('./services/AuthorService').name,
-    require('./components/CommentList').name,
-])
-    .config(enableHtml5Mode)
-    .config(setupRoutes);
+export default angular.module('ngReactExample', ['ui.router', CommentService.name,
+    AuthorService.name, CommentListModule.name])
+        .config(enableHtml5Mode)
+        .config(setupRoutes);
+
 

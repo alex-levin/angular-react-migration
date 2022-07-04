@@ -9,11 +9,11 @@
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.2",
     "json-server": "^0.9.6",
-    "react-scripts": "0.8.5"
+    "react-scripts": "^5.0.1"
   },
   "dependencies": {
     "angular": "^1.5.8",
-    "angular-ui-router": "^0.3.2",
+    "angular-ui-router": "^1.0.9",
     "lodash": "^4.17.4",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
@@ -26,5 +26,17 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "api": "json-server --watch mock-data.json --port 3004"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
